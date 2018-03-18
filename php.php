@@ -23,16 +23,3 @@
 	else include("index.html");
 ?>
 
-<?php
-	function main_function1(string $str) { 
-		$workers = [ 
-			0=>[ "fio" => "Иванов Иван Иванович", "phone" => "9(123)456-78-90", "pay" => 31000 ], 
-			1=>[ "fio" => "Петров Пётр Петрович", "phone" => "9(123) 323-99-71", "pay" => 34000 ] 
-		];
-		//print_r(json_encode($workers, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
-		//echo json_decode($json, true);
-	}
-	if(isset($_POST['_area']))
-		main_function1($_POST['_area']);
-	else include("index.html");
-?>
